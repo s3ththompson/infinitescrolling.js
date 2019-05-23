@@ -22,7 +22,7 @@ var tumblrAutoPager = {
             tAP.LN = lh.slice(7);
             if (tAP.LN.slice(tAP.LN.length - 1) == "/")
                 tAP.LN = tAP.LN.slice(0, tAP.LN.length - 1);
-        } else if ("http://" + tAP.LN + "/" != lh) {
+        } else if ("https://" + tAP.LN + "/" != lh) {
             console.log('returning because of link mismatch')
             return;
         }
